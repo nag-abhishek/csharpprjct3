@@ -11,7 +11,7 @@ pipeline {
   stages {
       stage('checkout code'){
     steps{
-echo GIT_BRANCH %GIT_BRANCH%
+echo 'Pulling...' + env.BRANCH_NAME
     git 'https://github.com/nag-abhishek/csharpproject2.git'
 }
 }
