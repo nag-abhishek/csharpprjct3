@@ -11,13 +11,13 @@ pipeline {
   stages {
       stage('checkout code'){
     steps{
-
+echo GIT_BRANCH %GIT_BRANCH%
     git 'https://github.com/nag-abhishek/csharpproject2.git'
 }
 }
 
 stage('restore nuget'){
- steps{echo $GIT_BRANCH
+ steps{echo GIT_BRANCH %GIT_BRANCH%
      bat 'dotnet restore WebApplication4.sln'
 }
 }
