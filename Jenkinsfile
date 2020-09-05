@@ -11,7 +11,6 @@ pipeline {
   stages {
       stage('checkout code'){
     steps{
-		echo 'Pulling...' + env.BRANCH_NAME
     git 'https://github.com/nag-abhishek/csharpproject2.git'
 }
 }
@@ -22,9 +21,13 @@ stage('restore nuget'){
 }
 }
 stage('sonarQube Analysis'){
-   
+   when{
+expression{env.BRANCH_NAME=='develop'}
+}
     
     steps{
+
+
         script {
        
            withSonarQubeEnv("Test_Sonar") {
