@@ -22,10 +22,7 @@ stage('restore nuget'){
 }
 }
 stage('sonarQube Analysis'){
-    when{
-        
-        Branch 'develop'
-    }
+   
     
     steps{
         script {
