@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "mRMa/P/B1Z/c1s9gGzKP3Rk1XCnhVCH1yhco19YTnGTj+LdLLmoaZdj/Ehjp4aaiQrOSNroTosrDthhmGA4ggQ==",
+  "success": true,
+  "projectFilePath": "D:\\Hello-World-DotNetCore-master\\WebApplication4\\WebApplication4.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\abhishekchadha\\.nuget\\packages\\microsoft.net.compilers\\3.3.1\\microsoft.net.compilers.3.3.1.nupkg.sha512",
+    "C:\\Users\\abhishekchadha\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.9.5\\microsoft.visualstudio.azure.containers.tools.targets.1.9.5.nupkg.sha512"
+  ],
+  "logs": []
+}
