@@ -22,7 +22,7 @@ stage('restore nuget'){
 }
 stage('sonarQube Analysis'){
    when{
-expression{env.BRANCH_NAME=='develop'}
+branch 'develop'
 }
     
     steps{
