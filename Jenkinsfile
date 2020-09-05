@@ -17,7 +17,7 @@ pipeline {
 }
 
 stage('restore nuget'){
- steps{echo GIT_BRANCH %GIT_BRANCH%
+ steps{
      bat 'dotnet restore WebApplication4.sln'
 }
 }
